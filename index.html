@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nithin Jose</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+  </head>
+
+  <style>
+
+	  .menu{
+		  margin:0 30px 0 0;
+	  }
+
+	  .menu a{
+		  clear:right;
+		  text-decoration:none;
+		  color: gray;
+		  margin:0 10px;
+		  line-height:70px;
+	  }
+
+	  label {
+		  margin:0 40px 0 0 ;
+		  font-size:26px;
+		  line-height: 70px;
+		  display:none;
+		  width:20px;
+		  float:right;
+	  }
+
+	  #toggle{
+		  display:none;
+	  }
+
+	@media only screen and (max-width:500px){
+		label{
+			display:block;
+			cursor:pointer;
+		}
+
+		.menu
+		{
+			text-align:center;
+			width:100%;
+			display:none;
+
+		}
+
+		.menu a{
+			display:block;
+			border-bottom:1px solid #EAEAEB;
+			margin:0;
+		}
+
+		#toggle:checked + .menu {
+			display:block;
+		}
+	}
+  </style>
+
+ 
+  <body>
+    <section class="s1">
+      <div class="main-container">
+        <div class="greeting-wrapper">
+          <h1>Hi, I'm Nithin Jose</h1>
+        </div>
+
+        <div class="intro-wrapper">
+          <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+              <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+              </div>
+            </a>
+			
+            <ul id="navigation">
+				<label for="toggle">&#9776</label>
+			<input type="checkbox" id="toggle">
+
+			  <div class="menu">
+              
+              <a href="index.html#projects">Projects</a>
+              <a href="index.html#achievemets">Achievemets</a>
+              <a href="https://github.com/nithinjose-tech/">Github</a>
+			</div>
+			</ul>
+          </div>
+
+          <div class="left-column">
+            <img id="profile_pic" src="images/nithin.jpeg" />
+            <h5 style="text-align: center; line-height: 0">
+              Personalize Theme
+            </h5>
+
+            <div id="theme-options-wrapper">
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+            </div>
+
+            <p id="settings-note">
+              *Theme settings will be saved for<br />your next vist
+            </p>
+          </div>
+
+          <div class="right-column">
+            <div id="preview-shadow">
+              <div id="preview">
+                <div id="corner-tl" class="corner"></div>
+                <div id="corner-tr" class="corner"></div>
+                <h3>What I Do</h3>
+                <p>I am a React Node js Web Developer.Also an ML enthusiast</p>
+                <div id="corner-br" class="corner"></div>
+                <div id="corner-bl" class="corner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <div class="about-me">
+            <h4>More about me</h4>
+
+            <p>
+              I build new projects just to tickle my brain and love teaching
+              others how they're made.
+            </p>
+
+            <p>
+              While I am busy with my academics, I still take interviews in
+              search of a great team & projects that interest me.
+            </p>
+
+            <hr />
+
+            <h4>TOP EXPERTISE</h4>
+
+            <p>
+              Fullstack developer with primary focus on Node js + React
+              <!-- <a target="_blank" href="resume.pdf">Download Resume</a> -->
+            </p>
+
+            <div id="skills">
+              <ul>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+              </ul>
+
+              <ul>
+                <li>Alan AI Voice Assistant</li>
+                <li>OpenCV</li>
+                <li>Sanity</li>
+                <li>Firebase</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <img id="social_img" src="images/youtube.png" />
+            <h3>Find me on:</h3>
+
+            <a target="_blank" href="https://www.youtube.com/channel/UCKEQyELj8NJPbSb3qMnq2vg"
+              >YouTube: @NithinJose</a
+            >
+            <br />
+            <a target="_blank" href="https://twitter.com/NithinJ90403043"
+              >Twitter: @NithinJose</a
+            >
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/nithin-jose-6741011b6"
+              >LinkedIn: @NithinJose</a
+            >
+            <br />
+            <a target="_blank" href="https://github.com/nithinjose-tech/"
+              >Github: @NithinJose</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s1">
+      <div class="main-container">
+        <a name="projects"></a>
+        <h3 style="text-align: center">Some of my past projects</h3>
+
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/news.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Voice Automated Newsfeed</h6>
+                <p class="post-intro">
+                  This a  voice automated news provider application built with React Js and Alan AI
+                </p>
+                <a href="post.html">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/airbnb.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Airbnb Clone</h6>
+                <p class="post-intro">
+                 This is the clone of famous Airbnb website using React Js
+                </p>
+                <a href="https://airbnb-premium.web.app/"> View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/sb.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Story Book Journal App</h6>
+                <p class="post-intro">
+                  Story Journal app built with Node Js,MongoDB,Google Auth Api..etc
+                </p>
+                <a href="https://github.com/nithinjose-tech/story-book-node">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/music.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Music Player Application</h6>
+                <p class="post-intro">
+                 Music Player Application built with Vue Js
+                </p>
+                <a href="https://nithin-music-app.web.app/">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/mern.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Memory Adder Application</h6>
+                <p class="post-intro">
+                This is a memory adder application built with the famous MERN Stack (MongoDB,Express,React ,Node Js).
+                </p>
+                <a href="https://github.com/nithinjose-tech/mern--memory">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/elevator.png" />
+              <div class="post-preview">
+                <h6 class="post-title">Voice Automated elevator</h6>
+                <p class="post-intro">
+                  This is a voice automated elevator built with Alan AI which is very helpful in pandemic situations 
+                </p>
+                
+                <a href="https://plantigrade-scope.000webhostapp.com/">View Project</a>
+
+              </div>
+            </div>
+      </div>
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="images/Tesla.png" />
+          <div class="post-preview">
+            <h6 class="post-title">Tesla Mobile App Clone</h6>
+            <p class="post-intro">
+              This is a mobile Application built with React Native which is the clone of the famous Tesla Website
+            </p>
+            <a href="https://github.com/nithinjose-tech/react-native-tesla-clone">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="images/cppo.png" />
+          <div class="post-preview">
+            <h6 class="post-title">Covid Proofing a Public Office</h6>
+            <p class="post-intro">
+             This is group project built with OpenCV,React..etc which helps to Covid proof a public office as a part of CUSAT Make-A-Ton
+            </p>
+            <a href="https://github.com/nithinjose-tech/AURA-make-a-ton">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="images/bb.png" />
+          <div class="post-preview">
+            <h6 class="post-title">Breaking Bad Cast</h6>
+            <p class="post-intro">
+            This a React Application where we can search for each character in the series Breaking Bad
+            </p>
+            <a href="https://breaking-bad-cast-fc4c6.web.app">View Project</a>
+          </div>
+        </div>
+      </div>
+		
+        </div>
+        
+      </div>
+
+      
+    </section>
+
+    <section class="s1">
+      <div class="main-container">
+        <a name="achievemets"></a>
+        <h3 style="text-align: center">My Achievements</h3>
+
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/React.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">Tech Talk on React JS</h6>
+                <p class="post-intro">
+                  This was an interactive session about React,it's basic terminologies,Future,Scope with help of my projects..etc
+                </p>
+                <a href="React.html">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/MongoDB.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">Workshop on MongoDB</h6>
+                <p class="post-intro">
+                  This workshop illustrated the baic way to approach MongoDB.Also hands on session using MongoDB Atlas,MongoDB Compass.
+                </p>
+                <a href="MongoDB.html">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/Nithin Jose.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">D4S Idea Pitching competiton</h6>
+                <p class="post-intro">
+                 Fist Place in D4S ,an idea pitching competiton conducted by SIGHT IEEE SB TKMCE on 19 November 2020
+                </p>
+                <a href="D4S.html">Read More</a>
+              </div>
+           </div>
+        </div>
+      </div>
+    </section>
+\
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
